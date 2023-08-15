@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Grow_finance/static/css/main.b1b785d8.css",
+    "main.css": "/Grow_finance/static/css/main.1b1aeb2a.css",
     "main.js": "/Grow_finance/static/js/main.a29e3cba.js",
     "index.html": "/Grow_finance/index.html",
-    "main.b1b785d8.css.map": "/Grow_finance/static/css/main.b1b785d8.css.map",
+    "main.1b1aeb2a.css.map": "/Grow_finance/static/css/main.1b1aeb2a.css.map",
     "main.a29e3cba.js.map": "/Grow_finance/static/js/main.a29e3cba.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1b785d8.css",
+    "static/css/main.1b1aeb2a.css",
     "static/js/main.a29e3cba.js"
   ]
 }
