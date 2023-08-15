@@ -121,6 +121,27 @@ nav {
   padding-top: 15px;
 }
 @media only screen and (max-width: 990px) {
+  nav {
+    padding-left: 2px;
+  }
+
+  .logo > a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-family: "Preahvihear", sans-serif;
+    font-family: "Sora", sans-serif;
+  }
+  .btn > button {
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 10px;
+    background-color: #3469fa;
+    border: transparent;
+    color: white;
+    font-size: 10px;
+    height: 30px;
+  }
   .mid_menu {
     display: none;
   }
