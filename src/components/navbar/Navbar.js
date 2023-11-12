@@ -6,6 +6,7 @@ export default function Navbar() {
   function handleOpen(e) {
     setOpen(!open);
   }
+
   return (
     <>
       <nav>
@@ -19,23 +20,24 @@ export default function Navbar() {
             <li className="item">supply</li>
             <li className="item">Trade</li>
             <li className="item">
-              <p>
-                Docs <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <p className="open">
+                Docs <i className="fa fa-caret-down" aria-hidden="true"></i>
+                <ul className="dropdown">
+                  <li>Gitbook</li>
+                  <li>Github</li>
+                </ul>
               </p>
-              <ul className="dropdown">
-                <li>Gitbook</li>
-                <li>Github</li>
-              </ul>
             </li>
             <li className="item">
-              <p>
-                Community <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <p className="open">
+                Community{" "}
+                <i className="fa fa-caret-down" aria-hidden="true"></i>
+                <ul className="dropdown">
+                  <li>Discord</li>
+                  <li>Twitter</li>
+                  <li>Medium</li>
+                </ul>
               </p>
-              <ul className="dropdown">
-                <li>Discord</li>
-                <li>Twitter</li>
-                <li>Medium</li>
-              </ul>
             </li>
           </li>
           <li className="btn">
@@ -50,24 +52,24 @@ export default function Navbar() {
                 <li className="item">supply</li>
                 <li className="item">Trade</li>
                 <li className="item">
-                  <p>
+                  <p className="res-down">
                     Docs <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul className="dropdown">
+                      <li>Gitbook</li>
+                      <li>Github</li>
+                    </ul>
                   </p>
-                  <ul className="dropdown">
-                    <li>Gitbook</li>
-                    <li>Github</li>
-                  </ul>
                 </li>
                 <li className="item">
-                  <p>
+                  <p className="res-down">
                     Community{" "}
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul className="dropdown">
+                      <li>Discord</li>
+                      <li>Twitter</li>
+                      <li>Medium</li>
+                    </ul>
                   </p>
-                  <ul className="dropdown">
-                    <li>Discord</li>
-                    <li>Twitter</li>
-                    <li>Medium</li>
-                  </ul>
                 </li>
               </ul>
             ) : (

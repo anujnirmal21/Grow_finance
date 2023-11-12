@@ -271,4 +271,9 @@
     text-align: center;
     padding: 40px;
   }
+
+  .footer_content {
+    justify-content: start;
+    padding-left: 40px;
+  }
 }

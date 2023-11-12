@@ -44,7 +44,7 @@ export default function Home() {
       </section>
       <section className="info">
         <div className="container-2">
-          <div className="part-1">
+          <div className="part-1" id="goto">
             <div className="heading s-2">
               <span className="h-2">Powered by</span>
               <span className="highlight hl-2">LP Token Liquidity</span>

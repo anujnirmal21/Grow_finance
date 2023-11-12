@@ -3,6 +3,7 @@ nav {
   background-color: black;
   color: white;
   padding: 20px;
+  height: 40px;
 }
 
 .logo > a {
@@ -23,7 +24,7 @@ nav {
 .nav_container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 20px;
@@ -37,10 +38,7 @@ nav {
   display: flex;
   font-size: 14px;
 }
-.mid_menu > li {
-  margin: 0px 5px;
-  padding: 10px 10px;
-}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -60,23 +58,28 @@ nav {
   cursor: pointer;
 }
 
+.item {
+  position: relative;
+  width: 100px;
+}
+
 /* Dropdown styles */
 .dropdown {
-  position: absolute;
-  top: 70%;
   display: none;
-  background-color: #222222c3;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100px;
-  border-radius: 10px;
 }
 
 .dropdown > li {
   text-align: center;
 }
 
-.item:hover .dropdown {
+.open:hover .dropdown {
   display: block;
+  background-color: #222222c3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  border-radius: 10px;
+  margin-top: 20px;
+  z-index: 400000;
 }
 
 .dropdown li {
@@ -113,7 +116,7 @@ nav {
   border-radius: 20px;
   z-index: 300;
   transform: translateY(0px) translateX(0px);
-  transition: transform 400ms ease 0s;
+  transition: transform 4s ease 3s;
 }
 
 .dropdown_menu > li {
@@ -153,14 +156,35 @@ nav {
     background-color: black;
     cursor: pointer;
   }
-  .dropdown {
-    position: relative;
-    top: 120%;
+
+  .dropdown_menu {
+    animation-name: down;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
     display: none;
-    background-color: #222222c3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100px;
+  }
+
+  @keyframes down {
+    from {
+      height: 0vh;
+    }
+    to {
+      height: 23vh;
+    }
+  }
+
+  .res-down:hover .dropdown {
+    display: block;
+    margin-top: 4px;
+    background-color: #f3ecec50;
     border-radius: 10px;
-    left: 43%;
   }
 }
